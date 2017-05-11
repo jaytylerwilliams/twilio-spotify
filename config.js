@@ -3,6 +3,7 @@ module.exports = {
     authToken: process.env.TWILIO_AUTH_TOKEN,
     twilioNumber: process.env.TWILIO_NUMBER,
 
+    port: process.env.PORT || 5000,
 
-    port: process.env.PORT || 5000
+    herokuAppName: process.env.HEROKU_APP_NAME
 };

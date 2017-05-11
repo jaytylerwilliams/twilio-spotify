@@ -43,7 +43,7 @@ module.exports = function(request, response) {
         var options = {
             to: from,
             from: to,
-            url: 'https://pure-springs-72511.herokuapp.com/api/call?url=' + encodeURIComponent(url)
+            url: 'https://' + config.herokuAppName + '.herokuapp.com/api/call?url=' + encodeURIComponent(url)
         };
 
         var response = 'Top Spotify search result: ';
