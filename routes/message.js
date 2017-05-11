@@ -35,7 +35,7 @@ module.exports = function(request, response) {
     }
 
     function spotifyCallback(artist, track, album, url) {
-        if(!urll) {
+        if(!url) {
             respond("An error occurred querying Spotify!  Please try again.");
             return;
         }
